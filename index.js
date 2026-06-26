@@ -10,9 +10,14 @@ const connectDB = async() => {
         name: 'Umayer',
         age: 21,
         email: 'mdumayer10@gmail.com',
+        hobbies: ['bating','bowling'],
+        address: {
+          street: "Fatullah"
+        }
     })
-    user.name = "Ahmad"
-    await user.save()
+
+    // user.name = "Ahmad"
+    // await user.save()
 
     // const user = new User({
     //     name: 'Umayer',
@@ -21,11 +26,11 @@ const connectDB = async() => {
     // })
     // await user.save()
 
-    console.log('saved')
+    console.log(user)
 
   } 
   catch (err) {
-    console.log(err);
+    console.log(err.message);
   }
 }
 connectDB();
