@@ -8,8 +8,9 @@ const connectDB = async() => {
 
     const user = await User.create({
         name: 'Umayer',
-        age: 21,
-        email: 'mdumayer10@gmail.com',
+        age: 22,
+        email: 'HELLOmdumayer10@gmail.com',
+        // createdAt: '10-02-2026',
         hobbies: ['bating','bowling'],
         address: {
           street: "Fatullah"
